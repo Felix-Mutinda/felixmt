@@ -1,4 +1,36 @@
-
 body {
-    background-image: url('../images/site-bg.jpg');
-}
+  background-image: url("../images/site-bg.jpg"); }
+
+.header {
+  margin-top: 10px; }
+  .header-bar--info {
+    text-align: right; }
+    .header-bar--info-title {
+      display: block; }
+    .header-bar--info-footer {
+      display: block;
+      font-style: italic; }
+  .header-bar--brand {
+    width: 120px;
+    height: 120px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
+    background: white; }
+
+.brand-inner-circle {
+  border: 1px solid grey;
+  border-radius: 50%;
+  width: 90%;
+  height: 90%;
+  padding: 0;
+  margin: 5.8px auto;
+  background-image: url("../images/profile.jpg"); }
+
+#brand-image-1 {
+  width: 100%;
+  z-index: -1000;
+  border-radius: 50%; }
+
+/*# sourceMappingURL=style.css.map */

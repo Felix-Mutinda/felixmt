@@ -2,6 +2,40 @@
 
 {% block title %}Felix Mutinda | Home {% endblock %}
 
-{% block content %}
+{% block link %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'aboutme/css/style.css' %}" type="text/css" media="all" />
+{% endblock %}
 
+{% block content %}
+    <div class="container-fluid">
+        <section class="header">
+            <div class="col-md-11 header-bar">
+                <div class="col-md-6 float-right header-bar--info">
+                    
+                    <div class="header-bar--infor-container float-left">
+                        <span class="header-bar--info-title">Felix Mutinda.</span>
+                        <span class="header-bar--info-footer">Software developer. Applied Math Enthusiast.</span>
+                    </div>
+                    
+                    <div class="col-md-3  float-right header-bar--brand">
+                        <div class="brand-inner-circle">
+                            <img id="brand-image-1" src="{% static 'aboutme/images/profile.jpg'%}" alt="Brand Image" />
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="clearfix"></div>
+                <hr />
+            </div>
+        </section>
+        
+        <section class="main">
+            
+        </section>
+        
+        <section class="footer">
+            
+        </section>
+    </div>
 {% endblock %}
