@@ -11,14 +11,15 @@
     <div class="container-fluid">
         <section class="header">
             <div class="col-md-11 header-bar">
-                <div class="col-md-6 float-right header-bar--info">
+                <div class="row float-right header-bar--container">
                     
-                    <div class="header-bar--infor-container float-left">
-                        <span class="header-bar--info-title">Felix Mutinda.</span>
-                        <span class="header-bar--info-footer">Software developer. Applied Math Enthusiast.</span>
+                    <div class="col-xs-5 header-bar--container--info float-left">
+                        <span class="header-bar--container--info-title">Felix Mutinda.</span>
+                        <span class="header-bar--container--info-footer">Software Developer,</span>
+                        <span class="header-bar--container--info-footer">Applied Math Enthusiast.</span>
                     </div>
                     
-                    <div class="col-md-3  float-right header-bar--brand">
+                    <div class="col-xs-5 float-right header-bar--container--brand">
                         <div class="brand-inner-circle">
                             <img id="brand-image-1" src="{% static 'aboutme/images/profile.jpg'%}" alt="Brand Image" />
                         </div>
@@ -26,16 +27,34 @@
                 </div>
                 
                 <div class="clearfix"></div>
-                <hr />
+                <!--<hr id="header-divider" />-->
             </div>
         </section>
         
         <section class="main">
-            
+            <div class="row">
+
+                <div class="col-xs-12 main-content">
+                    blah blah blah.
+                </div>
+            </div>
         </section>
         
         <section class="footer">
-            
+            <div class="row footer-container">
+                <div class="col-xs-3 footer-container--icon1">
+                    GitHub
+                </div>
+                
+                <div class="col-xs-3 footer-container--icon2">
+                    Email
+                </div>
+                
+                <div class="col-xs-3 footer-container--icon3">
+                    LinkedIn
+                </div>
+                
+            </div>
         </section>
     </div>
 {% endblock %}

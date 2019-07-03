@@ -1,47 +1,74 @@
 body {
     background-image: url('../images/site-bg.jpg');
+    color: #626267;
 }
 
 .header {
-    margin-top: 10px;
+    margin-top: 5px;
     
     &-bar {
         
-        &--info {
-            text-align: right;
-            
-            &-title {
-                display: block;
+        &--container {
+            &--info {
+                text-align: right;
+                margin-right: 5px;
+                padding-top: 20px;
+
+                &-title {
+                    display: block;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+                
+                &-footer {
+                    display: block;
+                    font-style: italic;
+                }
             }
             
-            &-footer {
-                display: block;
-                font-style: italic;
+            &--brand {
+                //display: block;
+                width: 120px;
+                height: 120px;
+                border: 2px solid #E9C46A;
+                border-radius: 50%;
+                text-align: center;
+                padding: 0;
+                //position: relative;
+                background: white;
+                margin-top: 0;
+                
             }
         }
         
-        &--brand {
-            //display: block;
-            width: 120px;
-            height: 120px;
-            border: 2px solid yellow;
-            border-radius: 50%;
-            text-align: center;
-            padding: 0;
-            //position: relative;
-            background: white;
+        &--container--brand:hover {
+            cursor: pointer;
+            background: #00BFB3;// #0471A6;
+            border: none;
             
+            .brand-inner-circle {
+                border:2px solid #E9C46A;
+            }
         }
     }
 }
 
+#header-divider {
+    display: block;
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #00BFB3;
+    margin: 1em 0; 
+    padding: 0; 
+}
+
 .brand-inner-circle {
-    border: 1px solid grey;
+    border: 1px solid #FFFC99;
     border-radius: 50%;
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
     padding: 0;
-    margin: 5.8px auto;
+    margin: 2.9px auto;
     background-image: url('../images/profile.jpg');
 }
 
@@ -50,3 +77,29 @@ body {
     z-index: -1000;
     border-radius: 50%;
 }
+
+.main-content {
+    margin: 10px auto;
+    width: 70%;
+    border: 1px solid #E9C46A;
+    min-height: 300px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    padding: 30px;
+}
+
+
+.footer-container {
+    &--icon1, &--icon2, &--icon3 {
+        border: 1px solid #E9C46A;
+        display: inline-block;
+        margin: 10px auto;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        
+    }
+}
+
+
+

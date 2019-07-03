@@ -1,36 +1,73 @@
 body {
-  background-image: url("../images/site-bg.jpg"); }
+  background-image: url("../images/site-bg.jpg");
+  color: #626267; }
 
 .header {
-  margin-top: 10px; }
-  .header-bar--info {
-    text-align: right; }
-    .header-bar--info-title {
-      display: block; }
-    .header-bar--info-footer {
+  margin-top: 5px; }
+  .header-bar--container--info {
+    text-align: right;
+    margin-right: 5px;
+    padding-top: 20px; }
+    .header-bar--container--info-title {
+      display: block;
+      font-weight: bold;
+      font-size: 18px; }
+    .header-bar--container--info-footer {
       display: block;
       font-style: italic; }
-  .header-bar--brand {
+  .header-bar--container--brand {
     width: 120px;
     height: 120px;
-    border: 2px solid yellow;
+    border: 2px solid #E9C46A;
     border-radius: 50%;
     text-align: center;
     padding: 0;
-    background: white; }
+    background: white;
+    margin-top: 0; }
+  .header-bar--container--brand:hover {
+    cursor: pointer;
+    background: #00BFB3;
+    border: none; }
+    .header-bar--container--brand:hover .brand-inner-circle {
+      border: 2px solid #E9C46A; }
+
+#header-divider {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #00BFB3;
+  margin: 1em 0;
+  padding: 0; }
 
 .brand-inner-circle {
-  border: 1px solid grey;
+  border: 1px solid #FFFC99;
   border-radius: 50%;
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
   padding: 0;
-  margin: 5.8px auto;
+  margin: 2.9px auto;
   background-image: url("../images/profile.jpg"); }
 
 #brand-image-1 {
   width: 100%;
   z-index: -1000;
+  border-radius: 50%; }
+
+.main-content {
+  margin: 10px auto;
+  width: 70%;
+  border: 1px solid #E9C46A;
+  min-height: 300px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  padding: 30px; }
+
+.footer-container--icon1, .footer-container--icon2, .footer-container--icon3 {
+  border: 1px solid #E9C46A;
+  display: inline-block;
+  margin: 10px auto;
+  width: 80px;
+  height: 80px;
   border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */
