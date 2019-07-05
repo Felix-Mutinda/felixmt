@@ -90,14 +90,36 @@ body {
 
 
 .footer-container {
+    margin: 10px auto;
+    
+    .fa {
+        margin: 0;
+        padding: 0;
+        font-size: 3em;
+        line-height: 1.5em;
+    }
+    
+    .fa:hover {
+        color: #00BFB3;
+    }
+    
     &--icon1, &--icon2, &--icon3 {
         border: 1px solid #E9C46A;
         display: inline-block;
-        margin: 10px auto;
+        margin: 0 auto;
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        
+        text-align: center;
+        color: #E9C46A;
+    }
+    
+    &--icon2 {
+        margin: 0 -25px;
+    }
+    
+    a:link, a:visited {
+        color: inherit;
     }
 }
 
