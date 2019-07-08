@@ -26,10 +26,8 @@ body {
     margin-top: 0; }
   .header-bar--container--brand:hover {
     cursor: pointer;
-    background: #00BFB3;
-    border: none; }
-    .header-bar--container--brand:hover .brand-inner-circle {
-      border: 2px solid #E9C46A; }
+    border-color: #00BFB3;
+    opacity: 0.5; }
 
 #header-divider {
   display: block;
@@ -53,9 +51,56 @@ body {
   z-index: -1000;
   border-radius: 50%; }
 
+/* Device = Greater than smartphones */
+.main {
+  width: 70%;
+  margin: 2px auto; }
+  .main-sidebar--items {
+    margin: 10px auto;
+    border: 1px solid #E9C46A;
+    min-height: 300px;
+    padding: 30px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    list-style: none; }
+    .main-sidebar--items li {
+      border-bottom: 1px solid #E9C46A;
+      padding: 5px 1px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px; }
+      .main-sidebar--items li i {
+        font-size: 1.5em;
+        color: #E9C46A;
+        width: 30px;
+        height: 30;
+        text-align: center; }
+    .main-sidebar--items li:hover {
+      border-bottom: 2px solid #00BFB3;
+      cursor: pointer; }
+      .main-sidebar--items li:hover i {
+        color: #00BFB3; }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-sidebar {
+    display: none; }
+    .main-sidebar--items {
+      margin: 10px auto;
+      border: 1px solid #E9C46A;
+      min-height: 300px;
+      border-radius: 30px;
+      border-top-right-radius: 0;
+      padding: 30px; }
+  .main-content {
+    border-radius: 15px;
+    padding: 15px;
+    width: 90%; } }
 .main-content {
   margin: 10px auto;
-  width: 70%;
   border: 1px solid #E9C46A;
   min-height: 300px;
   border-radius: 30px;
@@ -63,13 +108,14 @@ body {
   padding: 30px; }
 
 .footer-container {
-  margin: 10px auto; }
-  .footer-container .fa {
+  margin: 10px auto;
+  width: 70%; }
+  .footer-container .fa, .footer-container .far, .footer-container .fas, .footer-container .fab {
     margin: 0;
     padding: 0;
     font-size: 3em;
     line-height: 1.5em; }
-  .footer-container .fa:hover {
+  .footer-container .fa:hover, .footer-container .fab:hover, .footer-container .fas:hover, .footer-container .far:hover {
     color: #00BFB3; }
   .footer-container--icon1, .footer-container--icon2, .footer-container--icon3 {
     border: 1px solid #E9C46A;

@@ -43,12 +43,14 @@ body {
         
         &--container--brand:hover {
             cursor: pointer;
-            background: #00BFB3;// #0471A6;
-            border: none;
+            // background: #00BFB3;// #0471A6;
+            // border: none;
+            border-color: #00BFB3;
+            opacity: 0.5;
             
-            .brand-inner-circle {
-                border:2px solid #E9C46A;
-            }
+            // .brand-inner-circle {
+            //     border:2px solid #E9C46A;
+            // }
         }
     }
 }
@@ -78,28 +80,107 @@ body {
     border-radius: 50%;
 }
 
+/* Device = Greater than smartphones */
+
+.main {
+    width: 70%;
+    margin: 2px auto;
+    
+  &-sidebar {
+
+      &--items{
+        margin: 10px auto;
+        border: 1px solid #E9C46A;
+        min-height: 300px;
+        padding: 30px;
+        border-radius: 30px;
+        border-top-left-radius: 0;
+        list-style: none;
+
+        li {
+            border-bottom: 1px solid #E9C46A;
+            padding: 5px 1px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            
+            i {
+                font-size: 1.5em;
+                color: #E9C46A;
+                width: 30px;
+                height: 30;
+                text-align: center;
+            }
+        }
+        
+        li:hover {
+            border-bottom: 2px solid #00BFB3;
+            cursor: pointer;
+            
+            i {
+                color: #00BFB3;
+            }
+            
+        }
+      }
+  }
+}
+  
+  
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+  
+  .main {
+      
+      &-sidebar {
+          display: none;
+          
+          &--items{
+            margin: 10px auto;
+            border: 1px solid #E9C46A;
+            min-height: 300px;
+            border-radius: 30px;
+            border-top-right-radius: 0;
+            padding: 30px;
+          }
+      }
+      
+      &-content {
+        border-radius: 15px;
+        padding: 15px;
+        width: 90%;
+      }
+  }
+  
+}
+
 .main-content {
     margin: 10px auto;
-    width: 70%;
     border: 1px solid #E9C46A;
     min-height: 300px;
     border-radius: 30px;
     border-top-right-radius: 0;
     padding: 30px;
+    
 }
 
 
 .footer-container {
     margin: 10px auto;
+    width: 70%;
     
-    .fa {
+    .fa, .far, .fas, .fab {
         margin: 0;
         padding: 0;
         font-size: 3em;
         line-height: 1.5em;
     }
     
-    .fa:hover {
+    .fa:hover, .fab:hover, .fas:hover, .far:hover {
         color: #00BFB3;
     }
     
