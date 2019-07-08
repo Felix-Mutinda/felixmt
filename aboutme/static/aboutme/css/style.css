@@ -29,13 +29,26 @@ body {
     border-color: #00BFB3;
     opacity: 0.5; }
 
+@keyframes moveRight {
+  0% {
+    width: 0%; }
+  25% {
+    width: 20%; }
+  50% {
+    width: 40%; }
+  75% {
+    width: 60%; }
+  100% {
+    width: 80%; } }
 #header-divider {
   display: block;
+  visibility: hidden;
   height: 1px;
   border: 0;
   border-top: 1px solid #00BFB3;
-  margin: 1em 0;
-  padding: 0; }
+  margin: 1em auto;
+  padding: 0;
+  transition: all .2s; }
 
 .brand-inner-circle {
   border: 1px solid #FFFC99;

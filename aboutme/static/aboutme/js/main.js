@@ -7,9 +7,21 @@ $(function() {
     function updateMainContent(url) { // fetch url and display on .main-content
         let mainContent = $('.main-content');
         
+        /* pseudo progress bar below nav */
+        $('#header-divider').css({
+            visibility: 'visible',
+            animation: 'moveRight 1s infinite',
+        });
+        
         fetch(url)
         .then((data) =>  data.text())
         .then(function(data) {
+            /* remove pseudo progress bar */
+            $('#header-divider').css({
+                visibility: 'hidden',
+            });
+        
+            /* replace .main-content with retrieved data. */
             mainContent.html(data);
         })
         .catch(function(error) {
