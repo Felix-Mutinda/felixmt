@@ -85,7 +85,7 @@ body {
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 590px) {
   .main-sidebar {
     display: none; }
     .main-sidebar--items {
@@ -98,7 +98,7 @@ body {
   .main-content {
     border-radius: 15px;
     padding: 15px;
-    width: 90%; } }
+    width: 90% !important; } }
 .main-content {
   margin: 10px auto;
   border: 1px solid #E9C46A;

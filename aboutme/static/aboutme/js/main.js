@@ -3,12 +3,31 @@ $(function() {
     const homeLink = $('#home-link');
     const codeLink = $('#code-link');
     const aboutLink = $('#about-link');
-    const url = '/aboutme/home.html';
+
+    function updateMainContent(url) { // fetch url and display on .main-content
+        let mainContent = $('.main-content');
+        
+        fetch(url)
+        .then((data) =>  data.text())
+        .then(function(data) {
+            mainContent.html(data);
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
+    }
+    
     
     homeLink.on('click', function(e) {
-        let mainContent = $('.main-content');
-        $.get(url, "home-template", function(data, status, jqxhr){
-            console.log(status);
-        });
+        updateMainContent('/aboutme/home');
     });
+    
+    codeLink.on('click', function(e) {
+        updateMainContent('/aboutme/samples');
+    });
+    
+    aboutLink.on('click', function(e) {
+        updateMainContent('/aboutme/about');
+    });
+    
 });
