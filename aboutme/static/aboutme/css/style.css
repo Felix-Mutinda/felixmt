@@ -94,24 +94,6 @@ body {
       .main-sidebar--items li:hover i {
         color: #00BFB3; }
 
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-@media (min-width: 320px) and (max-width: 590px) {
-  .main-sidebar {
-    display: none; }
-    .main-sidebar--items {
-      margin: 10px auto;
-      border: 1px solid #E9C46A;
-      min-height: 300px;
-      border-radius: 30px;
-      border-top-right-radius: 0;
-      padding: 30px; }
-  .main-content {
-    border-radius: 15px;
-    padding: 15px;
-    width: 90% !important; } }
 .main-content {
   margin: 10px auto;
   border: 1px solid #E9C46A;
@@ -143,5 +125,39 @@ body {
     margin: 0 -25px; }
   .footer-container a:link, .footer-container a:visited {
     color: inherit; }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 0px) and (max-width: 590px) {
+  .main {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    .main-sidebar {
+      display: none; }
+      .main-sidebar--items {
+        margin: 10px auto;
+        border: 1px solid #E9C46A;
+        min-height: 300px;
+        border-radius: 30px;
+        border-top-right-radius: 0;
+        padding: 30px; }
+    .main-content {
+      border-radius: 15px;
+      padding: 15px;
+      width: 90% !important; }
+
+  .footer-container {
+    width: 70%; }
+    .footer-container--icon1, .footer-container--icon2, .footer-container--icon3 {
+      width: 50px;
+      height: 50px; }
+    .footer-container .fa, .footer-container .far, .footer-container .fas, .footer-container .fab {
+      margin: 0;
+      padding: 0;
+      font-size: 2em;
+      line-height: 1.5em; } }
 
 /*# sourceMappingURL=style.css.map */
