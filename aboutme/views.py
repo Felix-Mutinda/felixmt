@@ -6,10 +6,10 @@ def index(request):
     return render(request, 'aboutme/index.html')
 
 def home(request):
-    return HttpResponse("Home page.")
+    return render(request, 'aboutme/home_content.html')
 
 def samples(request):
-    return HttpResponse("Sample Work page.")
+    return render(request, 'aboutme/sample_work.html')
     
 def about(request):
-    return HttpResponse("About page.")
+    return render(request, 'aboutme/about_page.html')
