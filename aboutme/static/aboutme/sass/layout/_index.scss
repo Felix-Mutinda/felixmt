@@ -227,6 +227,9 @@ body {
               background-image: url('../images/site-bg.jpg');
               border-color: $primaryColor;
               
+              a i {
+                  color: $primaryColor;
+              }
               
               a:hover {
                   i {

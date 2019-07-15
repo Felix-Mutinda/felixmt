@@ -148,6 +148,8 @@ body {
       .main-dropdown .dropdown-menu {
         background-image: url("../images/site-bg.jpg");
         border-color: #E9C46A; }
+        .main-dropdown .dropdown-menu a i {
+          color: #E9C46A; }
         .main-dropdown .dropdown-menu a:hover i {
           color: #00BFB3; }
         .main-dropdown .dropdown-menu a:visited {
