@@ -68,6 +68,8 @@ body {
 .main {
   width: 70%;
   margin: 2px auto; }
+  .main-dropdown {
+    display: none; }
   .main-sidebar--items {
     margin: 10px auto;
     border: 1px solid #E9C46A;
@@ -135,6 +137,21 @@ body {
     width: 100%;
     margin: 0;
     padding: 0; }
+    .main-dropdown {
+      display: block;
+      margin-left: 2.5%; }
+      .main-dropdown .dropdown-toggle {
+        background: #E9C46A;
+        border-color: #E9C46A; }
+      .main-dropdown .dropdown-toggle::after {
+        display: none; }
+      .main-dropdown .dropdown-menu {
+        background-image: url("../images/site-bg.jpg");
+        border-color: #E9C46A; }
+        .main-dropdown .dropdown-menu a:hover i {
+          color: #00BFB3; }
+        .main-dropdown .dropdown-menu a:visited {
+          color: #626267; }
     .main-sidebar {
       display: none; }
       .main-sidebar--items {

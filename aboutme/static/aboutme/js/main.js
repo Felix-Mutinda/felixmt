@@ -1,8 +1,20 @@
 $(function() {
+    
+    
+    /* overide boostrap .dropdown-toggle .show colors */
+    $('.dropdown-toggle').click((e) => {
+
+        $('.dropdown-toggle').css({
+           'border-color': '#E9C46A',
+           'background': '#E9C46A',
+        });
+    });
+    
+    
     /* bind events to sidebar menu links */
-    const homeLink = $('#home-link');
-    const codeLink = $('#code-link');
-    const aboutLink = $('#about-link');
+    const homeLink = $('.home-link');
+    const codeLink = $('.code-link');
+    const aboutLink = $('.about-link');
 
     function updateMainContent(url) { // fetch url and display on .main-content
         let mainContent = $('.main-content');
